@@ -1,11 +1,69 @@
 @import "~bootstrap/scss/bootstrap";
 
-body {
-    background-image: url("../img/picsum16.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+
+header{
+    background-color: white;
+    max-width: 80%;
+    height: 80px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img{
+        height: 65px;
+    } 
+}
+  
+nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 0;
+    ul{
+        height: 50%;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        list-style: none;
+        margin-bottom: 0;
+    }
+}
+li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .5em;
+    font-size: small;
+    a{
+        text-decoration: none;
+        color: black;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        &:hover{
+            border-bottom: 1px solid blue;
+            cursor: pointer;
+        }
+        &:active{
+            background-color: lightgray;
+        }
+    }
 }
 
-h1 {
-    color: red;
+
+
+.jumboImg{
+    height: 40vh;
+    position: relative;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    .CurrentSeries{
+        position: absolute;
+        left: 200px;
+        bottom: -50px;
+    }
 }
