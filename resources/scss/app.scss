@@ -61,9 +61,120 @@ li{
         object-fit: cover;
         object-position: top;
     }
-    .CurrentSeries{
-        position: absolute;
-        left: 200px;
-        bottom: -50px;
+}
+
+.fumetti-PreContainer{
+    background-color: black;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    .fumetti-container{
+        position: relative;
+        max-width: 1000px;
+        margin: auto;
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+        .CurrentSeries{
+            padding-inline: 1em;
+            padding-top: .5em;
+            padding-bottom: .5em;
+            background-color: rgba(2,130,249,255);
+            color: white;
+            position: absolute;
+            left: 0;
+            top: -60px;
+        }
+        .card{
+            width: calc((100% - 5em) / 6);
+            background-color: black;
+            color: white;
+        }
     }
 }
+
+
+
+.infos-container{
+    position: relative;
+    background-color: rgba(2,130,249,255);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    .infos{
+      display: flex;
+      gap: 2em;
+      width: 70%;
+      margin-inline: auto;
+    }
+  }
+  
+  .info {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    color: white;
+    white-space: nowrap;
+    
+    img{
+      height: 70px;
+    }
+  
+    .special{
+      height: 50px;
+    }
+  
+  }
+  
+  .precontainer-privyces{
+    background-image: url(../img/footer-bg.jpg);
+    height: 350px;
+    padding: 3em;
+    display: flex;
+    
+  
+}
+  
+  .dc-logo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+    img{
+      width: 450px;
+      overflow: hidden;
+    }
+  }
+  
+  .container-socials{
+    position: relative;
+    height: 130px;
+    background-color: rgba(48,48,48,255);
+    
+    .container{
+      width: 70%;
+      height: 100%;
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+        button{
+        padding: 1em;
+        border: 2px solid rgba(2,130,249,255);
+        background-color: rgba(48,48,48,255);
+        color: white;
+        height: 60px;
+        cursor: pointer;
+        &:active{
+          background-color: grey;
+        }
+      }
+  
+        .solcials{
+            display: flex;
+            align-items: center;
+        gap: 1em;
+        color: rgba(2,130,249,255);;
+      }
+    }
+  }

@@ -11,16 +11,19 @@
         @include('partials/header')
         <main>
             <div class="jumboImg">
-                <img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="">
-                <div class="CurrentSeries"> CURRENT SERIES </div>
+                <img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="">    
             </div>
             <div class="fumetti-PreContainer">
                 <div class="fumetti-container">
+                    <div class="CurrentSeries"> CURRENT SERIES </div>
                     @foreach ($fumetti as $fumetto)
-                        <img src="{{ Vite::asset('resources/img/adv.jpg') }}" alt="" >
-                        <div>{{ $fumetto ['title'] }}</div>
+                        <div class="card">
+                            <img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="" >
+                            <div>{{ $fumetto ['title'] }}</div>
+                        </div>
                     @endforeach
                 </div>
+                <div>LOAD MORE</div>
             </div>
         </main>
         @include('partials/footer')
